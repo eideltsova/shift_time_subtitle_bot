@@ -70,8 +70,6 @@ def get_new_file(time_delta: int, message) -> str:
     try:
         new_file = shift_time_subtitle(input_files.get(message.chat.id)[1], time_delta)
         input_files.get(message.chat.id).append(new_file)
-        print(f"{input_files=}")
-        # как можно получить чат-ид не из мессаджа, а из словаря?
         bot.send_document(message.chat.id, document=open(new_file, 'rb'))
         delete_input_file(input_files.get(message.chat.id)[1])
     except Exception as e:
