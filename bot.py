@@ -1,11 +1,10 @@
 import os
 import telebot
-import config
 from create_directory import create_directory
 from shift_time_subtitle import *
 from resources import MESSAGES
 
-token = config.token
+token = HEROKU.token
 bot = telebot.TeleBot(token)
 
 input_files = {}
