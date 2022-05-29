@@ -26,6 +26,7 @@ parser-module==4.18
 path==16.4.0
 pycparser==2.21
 PyMySQL==1.0.2
+python==3.10.4
 pyOpenSSL==22.0.0
 PySocks==1.7.1
 pyTelegramBotAPI==4.5.0
