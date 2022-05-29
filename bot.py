@@ -1,12 +1,9 @@
 import os
 import telebot
-from pathlib import Path
 import config
 from create_directory import create_directory
 from shift_time_subtitle import *
-import resources as R
 from resources import MESSAGES
-import string
 
 token = config.token
 bot = telebot.TeleBot(token)
