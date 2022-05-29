@@ -4,7 +4,8 @@ from create_directory import create_directory
 from shift_time_subtitle import *
 from resources import MESSAGES
 
-token = HEROKU.token
+
+token = os.environ.get('TOKEN')
 bot = telebot.TeleBot(token)
 
 input_files = {}
